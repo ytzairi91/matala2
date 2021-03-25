@@ -1,4 +1,5 @@
-
+handle= open("C:\\Users\\ytzai\\Desktop\\matala2\\text.txt")
+inp= handle.read()
 
 def revword(word:str) -> str:
     i=len(word)-1
@@ -10,9 +11,7 @@ def revword(word:str) -> str:
 
 
 def countword() -> int:
-    
-    handle= open("C:\\Users\\ytzai\\Desktop\\matala2\\text.txt")
-    inp= handle.read()
+
     b=0
     word=''
     count=1
