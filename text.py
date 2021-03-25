@@ -15,13 +15,13 @@ def countword() -> int:
     inp= handle.read()
     b=0
     word=''
-    count=0
+    count=1
     aWord=''
-    while(inp[b]!=" "):
+    while(inp[b]!=" "  and inp[b]!="\n"):
         word=word+inp[b]
         b=b+1
     for a in inp[b:]: 
-        if(inp[b] != ' '):
+        if(inp[b] != " " and inp[b]!= "\n"):
             aWord=aWord + inp[b].lower()
             b=b+1
         elif(revword(aWord) == word ):
